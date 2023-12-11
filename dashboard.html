@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Admin Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="controls">
+            <form id="productTypeForm">
+                <label for="productType">Select Product Type:</label>
+                <select id="productType">
+                <option value="Cube Framed Mirror">Cube Framed Mirror</option>
+                <option value="Framed Chalkboard">Framed Chalkboard</option>
+                <option value="Framed Corkboard">Framed Corkboard</option>
+                <option value="Framed Mirror">Framed Mirror</option>
+                <option value="Framed Mirror No Bevel">Framed Mirror No Bevel</option>
+                <option value="Table Top Only">Table Top Only</option>
+                <option value="Table with Base">Table with Base</option>
+                <option value="Table Top Wood Samples">Wood Samples</option>
+                </select>
+                <input type="submit" value="Show Aggregation Calucations">
+            </form>
+        </div>
+
+        <div id="summaryContainer"></div>
+    
+        <script type="module" src="../controllers/dataController.js"></script>
+    </body>
+</html>
